@@ -1,0 +1,14 @@
+#PART 1 OF DAY 1 - ADVENT OF CODE 2015
+
+strfile = open("DAY1.txt").read()
+#The default mode for open is read-only, so you don’t need to specify the ‘r’ flag.
+floor = 0
+
+for i in range(0, len(strfile)):
+ if strfile[i] == '(':
+        floor += 1
+ elif strfile[i] == ')':
+        floor -= 1
+
+print("")
+print(int(floor))
