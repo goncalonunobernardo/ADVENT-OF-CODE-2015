@@ -1,6 +1,7 @@
 #PART 1 OF DAY 2 - ADVENT OF CODE 2015
 
 quantitypaper = 0
+quantitybow = 0
 #Initializing total paper needed
 
 strfile = open("DAY2.txt").read()
@@ -19,5 +20,11 @@ for line in strfile:
     #Adding the full area
     quantitypaper += 2* (al +aw + ah) + extra
 
-print(quantitypaper)
-#FINISHED PART1 // PART 2 BEGINS NOW
+    #PART1 FINISHED. PART2 INCOMING
+    ribbon = min(l+l+w+w, l+l+h+h, w+w+h+h)
+    bow = l*w*h
+    quantitybow += bow + ribbon
+
+print("Total paper needed:", quantitypaper)
+print("Total ribbin needed:", quantitybow)
+#CHA-CHING-CHING    
