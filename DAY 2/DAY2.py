@@ -20,6 +20,7 @@ for line in strfile:
     #Adding the full area
     quantitypaper += 2* (al +aw + ah) + extra
 
+<<<<<<<
     #PART1 FINISHED. PART2 INCOMING
     ribbon = min(l+l+w+w, l+l+h+h, w+w+h+h)
     bow = l*w*h
@@ -28,3 +29,13 @@ for line in strfile:
 print("Total paper needed:", quantitypaper)
 print("Total ribbin needed:", quantitybow)
 #CHA-CHING-CHING
+=======
+    #PART1 FINISHED. PART2 INCOMING
+    ribbon = min(l+l+w+w, l+l+h+h, w+w+h+h)
+    bow = l*w*h
+    quantitybow += bow + ribbon
+
+print("Total paper needed:", quantitypaper)
+print("Total ribbin needed:", quantitybow)
+#CHA-CHING-CHING    
+>>>>>>>
