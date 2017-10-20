@@ -20,7 +20,6 @@ for line in strfile:
     #Adding the full area
     quantitypaper += 2* (al +aw + ah) + extra
 
-<<<<<<<
     #PART1 FINISHED. PART2 INCOMING
     ribbon = min(l+l+w+w, l+l+h+h, w+w+h+h)
     bow = l*w*h
